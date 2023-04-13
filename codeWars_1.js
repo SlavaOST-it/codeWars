@@ -1,8 +1,7 @@
 function reverseWords(str) {
     let array = str.split(" ");
     array.reverse()
-    let a = array.join(' ').toString()
-    return a                      //str.split(' ').reverse().toString()
+    return array.join(' ').toString()                      //str.split(' ').reverse().toString()
 }
 
 console.log(reverseWords("hello world!"))
@@ -21,3 +20,8 @@ console.log(paperwork(-5, 5))
 
 
 //==========================================//
+function checkForFactor(base, factor) {
+    return (base % factor) === 0;
+}
+
+console.log(checkForFactor(63, 7))
