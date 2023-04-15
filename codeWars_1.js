@@ -96,3 +96,20 @@ function grow(x) {
 }
 
 console.log(grow([1, 2, 3, 4]))
+
+
+//=========================================//
+function camelize(str) {
+    return str
+        .split("-")
+        .map((word, index) => index === 0 && word !== " " ? word : word[0].toUpperCase() + word.slice(1))
+        .join("")
+
+}
+
+console.log(camelize("background-color"))
+console.log(camelize("list-style-image"))
+console.log(camelize("-webkit-transition"))
+
+
+//=========================================//
