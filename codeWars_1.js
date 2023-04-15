@@ -86,3 +86,13 @@ function getPlanetName(id) {
 }
 
 console.log(getPlanetName(5))
+
+
+//=========================================//
+function grow(x) {
+    return x.reduce(function (a, b) {
+        return a * b;
+    })
+}
+
+console.log(grow([1, 2, 3, 4]))
