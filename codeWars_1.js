@@ -148,3 +148,32 @@ function squareSum(numbers) {
 console.log(squareSum([1, 2]))   //5
 console.log(squareSum([0, 3, 4, 5]))  //50
 console.log(squareSum([]))
+
+
+//=========================================//
+function countPositivesSumNegatives(input) {
+    let newArray = []
+    let pozitiv = []
+    let negativ = 0
+    if (input === null) {
+        return newArray
+    }
+    if (input.length === 0) {
+        return newArray
+    }
+    for (let i = 0; i < input.length; i++) {
+        if (input[i] > 0) {
+            pozitiv.push(input[i])
+        } else if (input[i] <= 0) {
+            negativ += input[i]
+        }
+    }
+    newArray.unshift(pozitiv.length)
+    newArray.push(negativ)
+    return newArray
+}
+
+console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
+console.log(countPositivesSumNegatives(null))
+console.log(countPositivesSumNegatives([]))
