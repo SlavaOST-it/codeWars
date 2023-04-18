@@ -113,3 +113,15 @@ console.log(camelize("-webkit-transition"))
 
 
 //=========================================//
+function points(games) {
+    let totalPoints = 0;
+    for (const game of games) {
+        const [scoreA, scoreB] = game.split(":");
+        const points = scoreA > scoreB ? 3 : scoreA === scoreB ? 1 : 0;
+        totalPoints += points;
+    }
+    return totalPoints;
+}
+
+
+//=========================================//
