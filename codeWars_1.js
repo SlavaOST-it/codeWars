@@ -125,3 +125,15 @@ function points(games) {
 
 
 //=========================================//
+function repeatStr(n, s) {
+    str = ''
+    for (let i = 0; i < n; i++) {
+        str += s
+    }
+    return str
+}
+
+console.log(repeatStr(3, "*"))
+
+
+//=========================================//
