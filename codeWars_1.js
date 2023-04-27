@@ -250,7 +250,7 @@ console.log(unique(values))
 function aclean(arr) {
     let map = new Map
 
-    for (let word of arr){
+    for (let word of arr) {
         let sorted = word.toLowerCase().split("").sort().join()
         map.set(sorted, word)
     }
@@ -260,3 +260,21 @@ function aclean(arr) {
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
 console.log(aclean(arr))
+
+
+//=====================================//
+function sumSalaries(salaries) {
+    let sum = 0
+    for (let value of Object.values(salaries)) {
+        sum += value
+    }
+    return sum
+}
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+};
+
+console.log(sumSalaries(salaries))
