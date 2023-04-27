@@ -188,3 +188,11 @@ console.log(lovefunc(1, 4))
 console.log(lovefunc(2, 2))
 console.log(lovefunc(0, 1))
 console.log(lovefunc(0, 0))
+
+
+//=============================//
+function booleanToString(b) {
+    return b.toString()
+}
+
+
