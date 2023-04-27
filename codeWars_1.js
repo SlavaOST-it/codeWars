@@ -271,10 +271,35 @@ function sumSalaries(salaries) {
     return sum
 }
 
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+//
+// console.log(sumSalaries(salaries))
+
+
+//=====================================//
 let salaries = {
+    "Slava": 1000,
     "John": 100,
     "Pete": 300,
-    "Mary": 250
+    "Mary": 250,
+
 };
 
-console.log(sumSalaries(salaries))
+function topSalary(salaries) {
+    let name = ""
+    let max = 0
+    for (let sal of Object.entries(salaries)) {
+
+        if (sal[1] > max) {
+            max = sal[1]
+            name = sal[0]
+        }
+    }
+    return name
+}
+
+console.log(topSalary(salaries))
