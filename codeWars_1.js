@@ -179,7 +179,7 @@ console.log(countPositivesSumNegatives(null))
 console.log(countPositivesSumNegatives([]))
 
 
-// ==================================//
+//=====================================//
 function lovefunc(flower1, flower2) {
     return (flower1 % 2 === 0 && flower2 % 2 === 1) || (flower1 % 2 === 1 && flower2 % 2 === 0);
 }
@@ -190,7 +190,7 @@ console.log(lovefunc(0, 1))
 console.log(lovefunc(0, 0))
 
 
-//=============================//
+//=====================================//
 function booleanToString(b) {
     return b.toString()
 }
@@ -214,3 +214,21 @@ console.log(invert([-1, -2, -3, -4, -5]))
 console.log(invert([1, -2, 3, -4, 5]))
 console.log(invert([]))
 console.log(invert([0]))
+
+
+//=====================================//
+function fakeBin(x) {
+    let array = [...x].map(Number)
+    let newArray = []
+    console.log(array)
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 5) {
+            newArray.push(0)
+        } else {
+            newArray.push(1)
+        }
+    }
+    return newArray.join("").toString()
+}
+
+console.log(fakeBin('45385593107843568'));
