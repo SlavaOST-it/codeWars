@@ -340,3 +340,14 @@ function basicOp(operation, value1, value2) {
 
 console.log(basicOp("+", 4, 7))
 console.log(basicOp('-', 15, 18));
+
+
+//=====================================//
+function litres(time) {
+    return Math.floor(time * 0.5)
+}
+
+console.log(litres(1787))
+
+
+//=====================================//
