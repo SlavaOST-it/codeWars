@@ -351,3 +351,8 @@ console.log(litres(1787))
 
 
 //=====================================//
+function maps(x) {
+    return x.map(el => el * 2)
+}
+
+console.log(maps([1, 2, 3]))
