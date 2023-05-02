@@ -356,3 +356,15 @@ function maps(x) {
 }
 
 console.log(maps([1, 2, 3]))
+
+
+//=====================================//
+function findNeedle(haystack) {
+    for (let i = 0; i < haystack.length; ++i) {
+        if (haystack[i] === "needle") {
+            return ("found the needle at position " + haystack.indexOf("needle"))
+        }
+    }
+}
+
+console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
