@@ -404,3 +404,18 @@ function betterThanAverage(classPoints, yourPoints) {
 
 console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
 console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+
+
+//=====================================//
+const reverseSeq = n => {
+    let arr = []
+    for (let i = n; i >= 1; i--) {
+        arr.push(i)
+    }
+    return arr
+};
+
+console.log(reverseSeq(5))
+
+
+//=====================================//
