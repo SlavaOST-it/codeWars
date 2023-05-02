@@ -386,3 +386,21 @@ function past(h, m, s) {
 
 console.log(past(0, 1, 1))
 console.log(past(1, 1, 1));
+
+
+//=====================================//
+function betterThanAverage(classPoints, yourPoints) {
+    classPoints.push(yourPoints)
+    let summ = 0
+    let srednee = 0
+
+    for (let i = 0; i <= classPoints.length; ++i) {
+        summ = classPoints.reduce((a, b) => a + b, 0)
+        srednee = summ / classPoints.length
+    }
+    return srednee <= yourPoints
+
+}
+
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
