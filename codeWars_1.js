@@ -473,3 +473,17 @@ function vowelOne(s) {
 
 console.log(vowelOne('vowelOne'))
 console.log(vowelOne('123, arou'))
+
+
+//==================================//
+function getSumOfDigits(integer) {
+
+    let sum = 0;
+    while (integer > 0) {
+        sum += integer % 10;
+        integer = Math.floor(integer / 10);
+    }
+    return sum;
+}
+
+console.log(getSumOfDigits(123))
