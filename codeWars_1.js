@@ -457,4 +457,19 @@ console.log(shorter_reverse_longer("hello", "bau"));
 console.log(shorter_reverse_longer("fghi", "abcde"));
 
 
+//==================================//
+function vowelOne(s) {
+    let str = ''
+    for (let i = 0; i < s.length; i++) {
+        let a = s[i].toLowerCase()
+        if (a === 'a' || a === 'e' || a === 'i' || a === 'o' || a === 'u' || a === 'y') {
+            str += 1
+        } else {
+            str += 0
+        }
+    }
+    return str
+}
 
+console.log(vowelOne('vowelOne'))
+console.log(vowelOne('123, arou'))
