@@ -441,4 +441,20 @@ function getCount(str) {
 console.log(getCount('abracadabra'), 5)
 
 
-//=====================================//
+//==================================//
+function shorter_reverse_longer(a, b) {
+    if (a.length >= b.length) {
+        const reverse = a.split('').reverse().join('');
+        return (b + reverse + b)
+    } else {
+        const reverse = b.split('').reverse().join('');
+        return (a + reverse + a)
+    }
+}
+
+console.log(shorter_reverse_longer("first", "abcde"));
+console.log(shorter_reverse_longer("hello", "bau"));
+console.log(shorter_reverse_longer("fghi", "abcde"));
+
+
+
