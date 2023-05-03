@@ -419,3 +419,26 @@ console.log(reverseSeq(5))
 
 
 //=====================================//
+function getCount(str) {
+    let sum = 0
+
+    for (let i = 0; i < str.length; i++) {
+        switch (str[i]) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                sum++
+                break;
+            default:
+                break;
+        }
+    }
+    return sum
+}
+
+console.log(getCount('abracadabra'), 5)
+
+
+//=====================================//
