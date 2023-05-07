@@ -524,3 +524,14 @@ console.log(descendingOrder(111))
 console.log(descendingOrder(15))
 console.log(descendingOrder(1021))
 console.log(descendingOrder(123456789))
+
+
+//==================================//
+function getMiddle(s) {
+    return !(s.length % 2) ? s.substr(s.length / 2 - 1, 2) : s[Math.round(s.length / 2) - 1];
+}
+
+console.log(getMiddle("test"))
+console.log(getMiddle("testing"))
+console.log(getMiddle("middle"))
+console.log(getMiddle("A"))
