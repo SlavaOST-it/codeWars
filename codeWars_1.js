@@ -499,3 +499,14 @@ console.log(removeSmallest([2, 3, 4, 5, 1]));
 console.log(removeSmallest([5, 3, 2, 1, 4]));
 console.log(removeSmallest([2, 2, 1, 2, 1]));
 console.log(removeSmallest([]));
+
+
+//==================================//
+function highAndLow(numbers) {
+    const numArr = numbers.split(' ').map(Number)
+    const max = Math.max.apply(Math, numArr).toString()
+    const min = Math.min.apply(Math, numArr).toString()
+    return max + " " + min
+}
+
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
