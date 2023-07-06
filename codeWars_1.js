@@ -558,3 +558,18 @@ console.log(filter_list([1, 2, 'a', 'b']))
 console.log(filter_list([1, 'a', 'b', 0, 15]))
 console.log(filter_list([1, 2, 'aasf', '1', '123', 123]))
 console.log(filter_list([1, 2, 'aasf', '1', '123', 123, -5]))
+
+
+//==================================//
+function XO(str) {
+    const arr = str.toLowerCase().split('')
+    const x = arr.filter(el => el === "x")
+    const o = arr.filter(el => el === "o")
+    return x.length === o.length;
+}
+
+console.log(XO('xo'))
+console.log(XO('xxOo'))
+console.log(XO('xxxm'))
+console.log(XO('Oo'))
+console.log(XO('ooom'))
