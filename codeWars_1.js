@@ -583,3 +583,17 @@ function findShort(s) {
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
 console.log(findShort("turns out random test cases are easier than writing out basic ones"))
 console.log(findShort("Let's travel abroad shall we"))
+
+
+//==================================//
+function number(array){
+    if(array.length === 0){
+        return []
+    }
+    else {
+        return array.map((el, index) => `${index +1}: ${el}`)
+    }
+}
+
+console.log(number([]))
+console.log(number(["a", "b", "c"]))
