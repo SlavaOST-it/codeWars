@@ -535,3 +535,15 @@ console.log(getMiddle("test"))
 console.log(getMiddle("testing"))
 console.log(getMiddle("middle"))
 console.log(getMiddle("A"))
+
+
+//==================================//
+function accum(s) {
+    return [...s].map((char, index) => (char.toUpperCase() + char.toLowerCase().repeat(index))).join("-")
+}
+
+console.log(accum("ZpglnRxqenU"))
+console.log(accum("NyffsGeyylB"))
+console.log(accum("MjtkuBovqrU"))
+console.log(accum("EvidjUnokmM"))
+console.log(accum("HbideVbxncC"))
