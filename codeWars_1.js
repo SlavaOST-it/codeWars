@@ -306,7 +306,7 @@ console.log(topSalary(salaries))
 
 
 //=====================================//
-function removeUrlAnchor(url){
+function removeUrlAnchor(url) {
     return url.split('#')[0]
 }
 
@@ -586,12 +586,11 @@ console.log(findShort("Let's travel abroad shall we"))
 
 
 //==================================//
-function number(array){
-    if(array.length === 0){
+function number(array) {
+    if (array.length === 0) {
         return []
-    }
-    else {
-        return array.map((el, index) => `${index +1}: ${el}`)
+    } else {
+        return array.map((el, index) => `${index + 1}: ${el}`)
     }
 }
 
@@ -677,3 +676,13 @@ function longest(s1, s2) {
 console.log(longest("aretheyhere", "yestheyarehere"))
 console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
 console.log(longest("inmanylanguages", "theresapairoffunctions"))
+
+
+//==================================//
+function openOrSenior(data) {
+    return data.map(el => el[0] >= 55 && el[1] > 7 ? "Senior" : "Open")
+}
+
+console.log(openOrSenior([[45, 12], [55, 21], [19, -2], [104, 20]]))
+console.log(openOrSenior([[3, 12], [55, 1], [91, -2], [53, 23]]))
+console.log(openOrSenior([[59, 12], [55, -1], [12, -2], [12, 12]]))
