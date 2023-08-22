@@ -628,3 +628,18 @@ function sumTwoSmallestNumbers(numbers) {
 console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
 console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
 console.log(sumTwoSmallestNumbers([3, 87, 45, 12, 7]))
+
+
+//==================================//
+const isSquare = function (n) {
+    return Number.isInteger(Math.sqrt(n));
+}
+
+console.log(isSquare(-1))
+console.log(isSquare(0))
+console.log(isSquare(3))
+console.log(isSquare(4))
+console.log(isSquare(25))
+console.log(isSquare(26))
+
+
