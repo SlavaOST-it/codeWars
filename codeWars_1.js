@@ -653,3 +653,27 @@ function getSum(a, b) {
 console.log(getSum(0, -1))
 console.log(getSum(0, 1))
 console.log(getSum(2, 2))
+
+
+//==================================//
+function longest(s1, s2) {
+    let arrS1 = s1.split("").sort().reduce((result, item) => {
+        return result.includes(item) ? result : [...result, item];
+    }, [])
+    console.log(arrS1)
+    let arrS2 = s2.split("").sort().reduce((result, item) => {
+        return result.includes(item) ? result : [...result, item];
+    }, [])
+    console.log(arrS2)
+
+    let res = []
+    res.push(...arrS1, ...arrS2)
+    return res.sort().sort().reduce((result, item) => {
+        return result.includes(item) ? result : [...result, item];
+    }, []).join("")
+
+}
+
+console.log(longest("aretheyhere", "yestheyarehere"))
+console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
+console.log(longest("inmanylanguages", "theresapairoffunctions"))
