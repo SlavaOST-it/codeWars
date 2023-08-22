@@ -612,3 +612,19 @@ console.log(maskify('4556364607935616'))
 console.log(maskify('1'))
 console.log(maskify('11111'))
 console.log(maskify('Skippy'))
+
+
+//==================================//
+function sumTwoSmallestNumbers(numbers) {
+    if (numbers.length >= 4) {
+        let min1 = Math.min(...numbers)
+        let min2 = Math.min(...numbers.filter(el => el > min1))
+        return min1 + min2
+    } else {
+        return numbers
+    }
+}
+
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
+console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
+console.log(sumTwoSmallestNumbers([3, 87, 45, 12, 7]))
