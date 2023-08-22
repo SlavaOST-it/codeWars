@@ -597,3 +597,18 @@ function number(array){
 
 console.log(number([]))
 console.log(number(["a", "b", "c"]))
+
+
+//==================================//
+function maskify(cc) {
+    if (cc.length > 4) {
+        return ("#".repeat(cc.length - 4) + cc.substring(cc.length - 4))
+    } else {
+        return cc
+    }
+}
+
+console.log(maskify('4556364607935616'))
+console.log(maskify('1'))
+console.log(maskify('11111'))
+console.log(maskify('Skippy'))
