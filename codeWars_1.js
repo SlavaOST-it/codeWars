@@ -733,3 +733,9 @@ function sortArray(array) {
 console.log(sortArray([5, 3, 2, 8, 1, 4]))
 console.log(sortArray([5, 3, 1, 8, 0]))
 console.log(sortArray([]))
+
+
+//==================================//
+const numbers = [1, 45, 66, 2, 4, 6, -2, -10, -100, 100]
+let minValue = numbers.sort((a, b) => a - b)
+console.log(minValue[0])
