@@ -716,3 +716,20 @@ console.log(printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmx
 // console.log(number([[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]]))  //17
 // console.log(number([[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]]))   //21
 // console.log(number([[0, 0]]))
+
+
+//==================================//
+function sortArray(array) {
+
+    const odds = array
+        .filter(x => x % 2)
+        .sort((a, b) => a - b);
+
+    return array
+        .map(x => x % 2 ? odds.shift() : x);
+    // Return a sorted array.
+}
+
+console.log(sortArray([5, 3, 2, 8, 1, 4]))
+console.log(sortArray([5, 3, 1, 8, 0]))
+console.log(sortArray([]))
