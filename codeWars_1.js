@@ -761,3 +761,16 @@ const ucFirst = (str) => {
     return (str[0].toUpperCase() + str.slice(1))
 }
 console.log(ucFirst("вася") === "Вася")
+
+
+//==================================//
+function findUniq(arr) {
+    let maxValue = arr.sort((a, b) => a - b)
+    return maxValue[maxValue.length - 1]
+}
+
+console.log(findUniq([1, 0, 0]))
+console.log(findUniq([1, 1, 1, 2, 1, 1]))
+console.log(findUniq([3, 10, 3, 3, 3]))
+console.log(findUniq([0, 0, 0.55, 0, 0]))
+console.log(findUniq([-10, -50, -0.55, -20, -30]))
