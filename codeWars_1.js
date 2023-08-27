@@ -745,3 +745,12 @@ console.log(minValue[0])
 // const numbers = [1, 45, 66, 2, 4, 6, -2, -10, -100, 100]
 let maxValue = numbers.sort((a, b) => a - b)
 console.log(maxValue[maxValue.length-1])
+
+
+//==================================//
+function solution(str, ending) {
+    return str.endsWith(ending)
+}
+
+console.log(solution('abcde', 'cde'))
+console.log(solution('abcde', 'abc'))
