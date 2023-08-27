@@ -754,3 +754,10 @@ function solution(str, ending) {
 
 console.log(solution('abcde', 'cde'))
 console.log(solution('abcde', 'abc'))
+
+
+//==================================//
+const ucFirst = (str) => {
+    return (str[0].toUpperCase() + str.slice(1))
+}
+console.log(ucFirst("вася") === "Вася")
